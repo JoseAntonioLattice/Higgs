@@ -1,0 +1,234 @@
+\documentclass[12pt]{article}
+
+\usepackage{geometry}
+%\usepackage{showframe} %This line can be used to clearly show the new margins
+%\newgeometry{vmargin={15mm}, hmargin={12mm,17mm}}   % set the margins
+%\newgeometry{vmargin={20mm}, hmargin={20mm,20mm}}   % set the margins
+\newgeometry{vmargin={20mm}, hmargin={20mm,20mm}}
+
+\begin{document}
+
+\begin{center}
+
+{\Large{\underline{\bf En memoria de Peter Higgs}}} \vspace*{2mm} \\
+%{\Large{\underline{\bf Peter Higgs: un obituario}}} \vspace*{2mm} \\
+
+\end{center}
+
+\noindent
+Peter Higgs fue un f\'isico te\'orico brit\'anico, famoso por su
+trabajo de 1964 donde propuso un mecanismo que puede generar masas
+para part\'iculas elementales, conforme a la simetr\'{\i}a de norma.
+Medio siglo despu\'es, dos experimentos del CERN confirmaron
+que este mecanismo est\'a realizado en la naturaleza.
+El 8 de abril nos lleg\'{o} la triste noticia del fallecimiento del
+gran pionero de la f\'{\i}sica de part\'{\i}culas elementales.
+Este art\'{\i}culo es dedicado a su memoria, al mecanismo
+y la part\'icula que llevan su nombre.
+
+\section{Datos biogr\'aficos y contexto hist\'orico}
+
+Peter Higgs nació en 1929 en Newcastle, Inglaterra, 
+pas\'{o} su juventud parcialmente durante la Segunda Guerra Mundial,
+circunstancias que complicaron un poco su formaci\'on escolar.
+Despu\'es de la guerra, estudi\'o en Londres, primero matem\'aticas,
+luego f\'isica. En 1954, a los 25 a\~nos, ya había terminado su doctorado en el King's College.
+
+Luego trabaj\'{o} temporalmente en la Universidad de Edimburgo,
+en el University College y en el Imperial College, ambos en Londres.
+En 1960 regres\'{o} a Edimburgo -- ciudad que le encant\'o y donde
+el hab\'ia llegado por primera vez en 1949, como estudiante viajando de mochilazo -- para ocupar un puesto de catedr\'{a}tico y quedarse
+ah\'{\i} toda su vida.
+
+En 1964, a los 35 a\~{n}os, había escrito sus dos art\'{\i}culos famosos
+(y otro sobre el mismo tema en 1966) \cite{Higgs} que llamaron la atenci\'{o}n
+y condujeron a invitaciones para presentar seminarios en Princeton
+y Harvard. Ten\'{\i}a que defenderse contra audiencias crit\'{\i}cas,
+Sidney Coleman coment\'{o} m\'{a}s tarde que en Harvard ``quer\'ian
+romper en pedazos al idiota que pensaba que pod\'ia evadir el
+Teorema de Goldstone'' \cite{boson}. Result\'{o} que su concepto siguío
+de pie, pero aún sin aplicaci\'{o}n fenomenol\'{o}gica
+(sus art\'iculos trataron con un modelo de juguete). Adem\'{a}s
+se enter\'{o} por Yoichiro Nambu (el árbitro de su primer art\'iculo)
+de un trabajo parecido \cite{EB}, publicado
+15 d\'ias antes del primer art\'iculo de Higgs sobre el tema.
+Los autores eran Fran\c{c}ois Englert y Robert Brout quienes
+trabajaron en Bruselas, B\'elgica. Dos meses despu\'{e}s apareci\'{o}
+otro art\'{\i}culo relacionado, escrito en Londres por
+Gerald Guralnik, Carl Hagen y Tom Kibble \cite{GHK}, pero ellos ya habían
+conocido y citaron los trabajos de Englert, Brout y Higgs.
+
+El mecanismo que estos tres art\'{\i}culos propusieron no era
+totalmente nuevo: había sido descubierto en 1962/3 en el contexto de la
+materia condensada por Philip Anderson \cite{Anderson}. \'El aplic\'o
+conceptos de Julian Schwinger \cite{Schwinger} para la explicaci\'on
+teórica de la masa de una part\'icula de norma a la teor\'ia de
+superconductores. Englert, Brout y Higgs presentaron una
+extensi\'on a modelos relativistas.
+
+Totalmente independientemente, en Mosc\'{u} en 1965, dos chicos de 19
+a\~nos, ambos de nombre Alexander (o Sasha), con apellidos Migdal y
+Polyakov, discutieron en gran detalle qu\'e significa el rompimiento
+de una simetr\'ia \cite{Nobel13}. Ellos escribieron otro art\'iculo
+parecido que fue publicado en 1966 \cite{MigPol}. Hace unos
+a\~{n}os Migdal
+visit\'o M\'exico para un evento organizado por Alexander Turbiner,
+donde relat\'o sobre las dificuldades que ten\'{\i}an para publicar
+este art\'iculo, ya qu\'e la comunidad de f\'{\i}sicos establecidos
+en la Uni\'on Sovi\'etica -- bajo el liderazgo de Lev Landau -- rechaz\'o
+la teor\'{\i}a cu\'antica de campos, que todav\'{\i}a era muy
+controversial tambi\'en en el mundo occidental. Finalmente, este art\'iculo fue publicado con un poco de retraso, pero m\'as tarde ambos Sashas se hicieron
+famosos por otros trabajos --- en especial, Polyakov  quien es conocido por
+descubrir excitaciones topol\'ogicas que llamamos ahora instantones.
+
+La explicaci\'on de cómo  las part\'iculas de norma -- y ciertas part\'iculas
+acopladas -- pueden tener masa fue pronto conocida como el {\em mecanismo
+de Higgs},\footnote{Consultar la literatura original no conduce a
+  una explicaci\'on clara qu\'e es realmente la raz\'on porqu\'e la
+  terminolog\'ia excluye a Brout y Englert, menos tal vez por razones
+  fon\'eticas.} el tema de la Secci\'on 2 de este resumen.
+Su aplicaci\'on a la fenomenolog\'ia de part\'iculas elementales 
+emergi\'o en 1967/8 por parte de Steven Weinberg \cite{Weinberg} y
+de Abdus Salam \cite{Salam}.
+Ellos integraron este mecanismo al modelo de la interacci\'on
+electrod\'ebil que Sheldon Glashow hab\'ia propuesto en 1961
+\cite{Glashow} durante su estancia en Copenhague.
+De hecho, Glashow estuvo presente en el seminario de Higgs en Harvard,
+y reconoci\'o que era ``a nice model'' \cite{boson}, pero nunca se le
+occuri\'o la idea de que este mecanismo podr\'ia ser el remedio
+para salvar a su modelo, que \'el hab\'ia abandonado.
+
+Sin embargo, esta teor\'ia -- ahora conocida como el sector
+elecrod\'ebil de Modelo Estándar -- aún no era generalmente aceptada
+por la comunidad ya que era considerada no renormalizable.
+Las teor\'ias cu\'anticas de campos casi siempre parecen divergentes
+a altas energ\'ias, as\'i que requieren una ``regularizaci\'on'',
+una manipulaci\'on matem\'atica que convierte la divergencia
+en un valor finito. Se dice que una teor\'ia es {\em renormalizable}
+si, al final del c\'alculo, se puede remover la regularizaci\'on
+totalmente y llegar a predicciones finitas para las observables
+(esta definici\'on es ligeramente simplista).
+
+La comunidad f\'isica cambi\'o su punto de vista en 1971/2, gracias
+al trabajo de Gerard 't Hooft, un brillante estudiane de doctorado
+en Utrecht, Holanda, quien present\'o evidencia a favor de la
+renormalizibilidad de dicho modelo (parcialmente junto a
+su asesor, Martinus Veltman). Estos trabajos \cite{tHooft} fueron
+una sensaci\'on que causaron un cambio de paradigma en aquella \'epoca.
+
+La clave para este hito fue un nuevo m\'etodo, la {\em regularizaci\'on
+dimensional} que es entre los logros principales de la f\'isica en
+Am\'erica Latina: fue propuesta primero por dos argentinos, Carlos Bollini
+y Juan Jos\'e Giambiagi en 1971, aunque la publicaci\'on \cite{BolGiam}
+se demor\'o hasta 1972. Ellos trabajaron en La Plata, en
+circunstancias dif\'iciles durante la dictadura militar \cite{DimReg}.
+
+Agregamos que hoy en d\'ia se da menos importancia a la pregunta
+si el Modelo Estándar es renormalizable: la tendencia es que se
+considera como teor\'ia efectiva, y su validez en un gran rango
+energ\'etico -- que no tiene que extenderse hacia infinito --
+es suficiente.
+
+Poco despu\'es, en 1973, el Modelo Estándar de las part\'iculas
+elementales fue completamente establecido, con un sector
+electrod\'ebil \cite{Weinberg,Salam} y otro de la interacci\'on
+fuerte \cite{QCD}. En ambos sectores,
+el mecanismo de Higgs es indispensable para proporcionar masas
+a gran parte de las part\'iculas elementales.
+Esto fue una revoluci\'on en la f\'isica de altas energ\'ias como no la
+hemos visto m\'as en el medio siglo que sigui\'o, aunque después el progreso
+fue relativamente lento.
+
+En el siglo XXI es popular especular sobre f\'isica m\'as all\'a
+del Modelo Estándar. Sin embargo, por ahora ninguna de estas propuestas
+tiene apoyo sólido de datos experimentales. Por otro lado, los
+experimentos han confirmado las predicciones del Modelo Estándar una
+y otra vez: muchas veces salien al aire en las noticias que el Modelo Estándar ha sido ``refutado''
+por nuevos resultados, pero al final del an\'alisis, y la repetici\'on
+de los experimentos, siempre sus predicciones han sido
+aprobadas.\footnote{Como ejemplo reciente, en la segunda parte de la
+  decada pasada, se difudieron noticas de una tensi\'on entre el Modelo
+  Estandar y experimentos con el decaimiento de mesones pesados
+  conocidos como ``mesones B''. Al final, esta discrepacia no se
+  substanci\'o. La \'ultima moda es el momento magn\'etico del
+  muón, donde el valor experimental parece un poquito diferente
+  del c\'alculo basado en el Modelo Estándar. Si esto es verdad --
+  cosa que no es nada certera -- la predicci\'on se equivoca al
+  nivel relativo de $10^{-10}$: si lo comparamos con la distancia
+  entre M\'exico y Europa central (Suiza por ejemplo), unos
+  10,000\,km, esto corresponde a un posible error de la magntitud
+  de milímetros. Pero cálculos con simulaciones num\'ericas
+  en la ret\'icula conducen a resultados m\'as cercanos al valor
+  experimental, tendencia que indica que incluso esta discrepancia
+  m\'inima podr\'ia desaparecer con un an\'alisis m\'as preciso,
+  igual que todas las supuestas discrepancias anteriores.}
+  
+El Modelo Estándar es aún incompleto para describir al universo (faltan por ejemplo
+la gravitaci\'on, materia oscura y energ\'ia oscura), pero
+a\'un as\'i: se trata de nada menos que la teor\'ia m\'as precisa
+y -- en este sentido -- m\'as exitosa en la historia de la ciencia.\\
+ 
+Higgs ya no particip\'o en este desarollo r\'apido. \'El ya era
+tan famoso que pod\'ia permitirse casi no publicar m\'as resultados
+de investigaci\'on a partir de la edad de 40 a\~{n}os.
+(En M\'exico esto ser\'ia un problema s\'erio con el SNII etc.)
+ 
+Era conocido como persona tranquila y modesta, casi t\'imida,
+que no busc\'o la atenci\'on medi\'atica o ponerse en el centro de atenci\'on en eventos. Con su mentalidad de abstenerse del
+``show'', se puede caracterizar como el contrario a Feynman.
+Esta caracterizaci\'on corresponde a la impresi\'on de uno de los
+autores (WB) qui\'en particip\'o en un congreso en Edimburgo 1997.
+Higgs (quien era em\'erito desde 1996) apareci\'o en el banquete,
+pero muy discreto, simplemente para sentarse en una mesa sin
+ning\'un espect\'aculo.
+
+Esto no significa que Higgs no ten\'ia convicciones: era
+temporalmente activista para el desarmamento nuclear y
+por el movimiento ambiental como miembro de Green Peace. \\
+
+Una vez que el Modelo Estándar había sido establecido, su exploraci\'on
+progresó con trabajo intenso en m\'ultiples pa\'ises.
+En el a\~no 2000, todas sus part\'iculas ya eran experimentalmente
+encontradas, menos una: la famosa ``part\'icula de Higgs'', involucrada
+en este mecanismo, como vamos a descibir en la Secci\'on 2.
+
+Otra vez, la nomenclatura es tal vez un poco injusta con Englert y
+Brout, pero as\'i es la convenci\'on de la comunidad.
+Higgs no puso este t\'ermino, pero tambi\'en le era incómodo el
+apodo absurdo ``part\'icula de dios'' que no tiene ni el menor sentido.
+Este término fue propuesto por la editorial de un libro de divulgaci\'on \cite{Lederman},
+obviamente con un objetivo comerical, pero totalmente irresponsable.
+Este t\'ermino se hizo popular y condujo a confusi\'on sin fin,
+por ejemplo iglesia cat\'olica de Espa\~na crey\'o que el trabajo al
+CERN tuviera algo que ver con teolog\'ia \cite{boson}. !`Tenemos que
+tener cuidado con los terminos que se usamos!
+
+En el siglo XXI fuimos testigos de una carrera emocionante en la
+b\'usqueda de la part\'icula de Higgs. En su fase final, era una
+compentencia entre el Fermilab (cerca de Chicago) y el CERN
+(cernca de Ginebra, sobre la frontera entre Suiza y Francia).
+Despu\'es de primeras indicaciones en 2011, en 2012 las
+colaboraciones ATLAS y CMS, ambos trabajando de manera independiente
+al Gran Colisionador de Hadrones (LHC) al CERN, presentaron
+evidencia para la observaci\'on indirecta pero clara de la
+part\'icula de Higgs qu\'e era tanto buscada \cite{ATLASCMS}.
+
+Con esto todo el conjunto de part\'iculas del Modelo Estandar
+había sido observado. As\'i se confirm\'o que el mecanismo de Higgs
+est\'a realizado en la naturalza, 48 a\~nos despu\'es de su
+propuesta te\'orica. Esto se demor\'o casi el doble del tiempo
+que la observaci\'on del neutrino (predicho por Wolfgang Pauli en 1930,
+detectado por Clyde Cowan, Frederick Reines y colaboradores en
+1956), vemos que a veces vale la pena tener paciencia.
+
+En particular, valió la pena para Englert y Higgs, quienes recibieron
+el Premio Nobel en 2013 por su predicci\'on correcta \cite{Nobel13};
+tristemente, Brout hab\'ia muerto poco antes, en 2011.
+En abril del 2024 nos lleg\'o la noticia del fallecimiento de Higgs,
+a los 94 a\~nos, despu\'es de una breve enfermedad.
+
+\section{Mecanismo de Higgs}
+
+\input{refs}
+
+\end{document}

@@ -1,0 +1,194 @@
+\documentclass[12pt]{article}
+
+%\usepackage[spanish]{babel}
+\usepackage{amsmath,latexsym,amssymb}
+
+\usepackage{graphicx}
+
+\usepackage{geometry}
+%\usepackage{showframe} %This line can be used to clearly show the new margins
+%\newgeometry{vmargin={15mm}, hmargin={12mm,17mm}}   % set the margins
+%\newgeometry{vmargin={20mm}, hmargin={20mm,20mm}}   % set the margins
+\newgeometry{vmargin={20mm}, hmargin={20mm,20mm}}
+
+\newcommand{\R}{\mathbb{R}}
+
+\usepackage{subcaption}
+
+%\newcommand{\aa}{\'{a}}
+%\newcommand{\'i}{\'{\i}}
+%\newcommand{\o}{\'{o}}
+
+\begin{document}
+
+\begin{center}
+
+{\Large{\underline{\bf En memoria de Peter Higgs (1929 -- 2024)}}} \vspace*{2mm} \\
+
+\end{center}
+
+\noindent
+\input{abs}
+
+\section{Datos biogr\'aficos y contexto hist\'orico}
+
+\input{sec1a}
+
+\section{Mecanismo de Higgs}
+
+\input{sec2a}
+
+\input{refs}
+
+\end{document}
+
+\newpage
+
+\begin{itemize}
+
+\item El mundo consiste de part\'iculas elementales,
+  indivisibles, pocos tipos (como 25, depende como se cuenta), ejemplos
+  famosos: electr\'on, fot\'on (part\'icula de la luz)
+  
+\item Descripci\'on relativista con ``campos'', omnipresentes en el
+  universo, estado base: vac\'io, excitaciones cu\'antizadas:
+  part\'iculas elementales. Un campo para cada tipo de part\'icula,
+  excitaciones pueden moverse (como ondas), interactuar,
+  generar y destruir part\'iculas
+  
+\item Concepto central: simetr\'ias, invarianza bajo ciertas
+  transformaciones de los campos.
+
+  \subitem global: misma transformaci\'on de un campo de todas lados
+  (como gimn\'asia colectiva)
+
+  \subitem local: transformaci\'on independiente en cada punto del
+  espacio y tiempo (gimn\'asia ca\'otica)
+
+  Muchas m\'as opciones: simetr\'ia m\'as dif\'icil y poderosa/restrictiva
+
+  Campo adicional, ``de norma'', compensa cambio relativo en
+  puntos cercanos en transformaci\'on simultanea, transmite
+  interacci\'on: concepto muy exitoso para describir interacciones,
+  pero simetr\'ia local tiene que ser exacta
+
+\item Una clase de part\'iculas es conocida como ``fermiones'':
+  esp\'in 1/2 (grado de liberad interno, se manifesta como
+  momento angular):
+  electr\'on y dos primos m\'as pesados, el neutrino (mucho
+  m\'as ligero y sin carga el\'ectrica), cuarks (consitutuyentes
+  del prot\'on, neutr\'on etc.)
+
+\item Un fermi\'on tiene dos variantes, ``quiralidad'' izquierda o
+  derecha (como manos, pero en un sentido abstracto).
+
+  Sin masa: {\it e.g.} electr\'{o}n izquierdo y derecho son
+  independientes, pero el t\'ermino para la masa requiere de su producto
+  (manos juntas). Simetr\'ia: ambos tienen que transformar de la misma
+  manera, pero la teria electrod\'ebil (Glashow, 1961) no es as\'i:
+  hay transformaciones que solamente afectan $e_{L}$, pero $e_{R}$ no.
+
+  Incompatible con $m_e$? Pero $m_e \simeq 0.5 \, {\rm MeV}$
+
+  Part\'iculas que transmiten fuerza d\'ebil ($\to$ decaimiento
+  radioactivo): $W^{\pm}$, $Z$ (por carga el\'ectrica $\pm1, \ 0$)
+  tambi\'en tienen masa aparamente prohibida, pero son del alcance
+  muy corta (como $10^{-17}$~m) $\to$ s\'i tienen que ser pesados
+
+  Objeci\'on de Pauli en un seminario en Princeton:
+  pregunta matadora
+  %de C.N.\ Yang de este tipo de campos
+  %de norma en Princeton, dej\'o Yang desesperado
+  
+\item Mecanismo de Higgs: agrega campo nuevo, ``de Higgs'' $\phi$
+  (``escalar'': esp\'in 0)
+
+  Forma producto de $e_L$, $\phi$ y $e_R$; $\phi$ tambi\'en transforma
+  bajo simetr\'ia local, t\'ermino total {\em es} invariante
+
+  Baja energ\'ia: campo de Higgs ``se congela'' en su estado base:
+  requiere un valor $\neq 0$ para actuar como masa $m_e$ (y
+  tambi\'en $M_W$ y $M_Z$)
+
+  Se puede lograr con un potencial tipo sombrero: plano de Higgs,
+  altura: valor del potencial, m\'inima con $\phi \neq 0$
+
+  Elige {\it un} m\'inimo: fluctuaciones ($=$ part\'iculas)
+
+  \subitem radiales: resistencia, masa$^{2} \sim $ curvatura del potencial
+
+  \subitem tangencial: masa $=0$, bosones Nambu-Goldstone (NGB), no
+  observado en este contexto, problema con Teorema de Goldstone (Coleman)
+
+\item Sin embargo:\\ Observaci\'on de Brout, Englert, Higgs:
+  NGB solo para rompimiento de simetr\'ia global.
+
+  Simetr\'ia local: m\'inimos conectados por transformaciones locales,
+  fisicamente equivalentes, mismo estado, no hay NGBs.
+  Pero las particulas $W$, $Z$ adquieren masa, ``se comen'' los NGBs.
+  $W, Z$: interacci\'on d\'ebil de corto alcance, pero el fot\'on
+  se queda sin masa: fuerza electromagnetica de largo rango
+
+  Tambi\'en electr\'on y sus primos obtienen masas de esta manera,
+  igual que los cuarks
+
+\item El campo de Higgs tiene 4 componentes: 3 tangenciales
+  que ``se comen'' las particulas $W^{\pm}$ y $Z$. Se queda la
+  componente radial, con masa: la part\'icula de Higgs, tendr\'a
+  que ser observable
+
+  Teor\'ia no predice su masa, solamente se pueden
+  poner cuotas, carrera por su b\'usqueda era ``en la oscuridad''
+
+  De todas maneras: muy pesado, $> 100$~GeV, creaci\'on requiere colisiones
+  de altas energ\'ias. Vive muy poco, $10^{-22}~ {\rm sec}$, no deja
+  trayectorias en ning\'un dedector.
+
+  Pero se pueden capturar los productos de su decaimiento,
+  en particular $\phi \to 2 \gamma$: se puede reproducir su masa,
+  125 GeV, esp\'in 0 (por ejemplo, part\'icula de esp\'in 1 no
+  puede decaer en 2$\gamma$, Teorema de Landau) %y Yang
+  
+  Estudio de muchos decaimientos diferentes, independiente
+  en ATLAS y CMS
+
+\item Neutrinos tienen un papel especial: ME tradicional:
+   $m_{\nu}=0$, solamente $\nu_L$.
+
+  Consistente; pero finales del siglo 20 se observ\'o: $m_{\nu}>0$
+
+  Parece que requiere $\nu_R$, esto permite mecanismo Higgs para $\nu$,
+  y adem\'as otro tipo de masa, solamente de $\nu_R$ (Majorana)
+
+  Sin embargo: $\nu_R$ no observado, y existencia no es seguro:
+  t\'ermino de masa unicamente de $\nu_L$, no renormalizable,
+  ser\'ia la alternativa
+
+\item Problema de la jerarqu\'ia: parece natural que efectos
+  - o correciones - cu\'anticos suben $m_{\rm H}$ a un valor muy alto,
+  la ``escala de Planck'' $10^{17}$ veces su valor real.
+
+  Es posible con una ``masa desnuda'' (antes de considerar
+  correciones cu\'anticas)
+  muy negativo, cancela casi todo hasta un resto diminuto,
+  pero esto no parece natural, ``problema de la jerarqu\'ia''
+  (proyecto de un estudiante mio: tratamiento con regularizaci\'on
+   sofisticada para ``domar'' el efecto) 
+
+\item Masas de part\'iculas elementales vienen del mecanismo de Higgs
+  (menos tal vez neutrinos, y otros como el fot\'on se quedan
+  sin masa)
+
+  Sin embargo: la masa de un objeto macrosc\'opico de nuestra vida
+  cotidiana viene solamente $\sim 1 \dots 2 \%$ del mecanismo de Higgs:
+  principalmente masas de nucleones (protones y neutrones) que
+  consiste por gran parte de energ\'ia de ``gluones'' (otras part\'iculas
+  de norma, que transmiten la interacci\'on fuerte): tienen masa 0,
+  pero son confinados al interior de un nucle\'on, y su energ\'ia se
+  manifiesta como casi toda la masa del nucleon.
+
+  ?`C\'omo sabemos esto? Tal vez tema para otra charla $\dots$
+  
+\end{itemize}
+
+\end{document}
